@@ -1,10 +1,9 @@
-// vercel-build.js
-const { execSync } = require('child_process');
+import { execSync } from 'child_process';
 
+console.log('Generating Prisma client...');
 try {
-  console.log('Running prisma generate...');
   execSync('npx prisma generate');
-  console.log('Prisma client generated successfully!');
+  console.log('Prisma client generated!');
 } catch (error) {
   console.error('Prisma generation failed:', error);
   process.exit(1);

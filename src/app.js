@@ -27,6 +27,12 @@ app.use( (req, res, next) => {
 })
 app.use(errorHandler)
 
+app.get('/', (req, res) => {
+    res.json({"status": "healthy"})
+})
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 })
+
+export default app
