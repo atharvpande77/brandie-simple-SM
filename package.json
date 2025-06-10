@@ -1,0 +1,26 @@
+{
+  "name": "brandie-assignment",
+  "version": "1.0.0",
+  "description": "A simple social media backend server.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --env-file=.env ./src/app.js",
+    "start": "node ./src/app.js"
+  },
+  "author": "Atharv Pande",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.0",
+    "prisma": "^6.9.0"
+  }
+}
