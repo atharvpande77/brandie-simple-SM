@@ -31,8 +31,14 @@ app.get('/', (req, res) => {
     res.json({"status": "healthy"})
 })
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-})
-
 export default app
+
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// })
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
