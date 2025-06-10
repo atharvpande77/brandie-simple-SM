@@ -42,19 +42,6 @@ A public **Postman Collection** is available for testing the APIs:
 
 ---
 
-## 🛠️ Local Development Setup
-
-```bash
-git clone <repo-url>
-cd <repo-folder>
-npm install
-npm run dev
-```
-
-> Make sure PostgreSQL is running locally and the `.env` file is properly configured with DB credentials and JWT secrets.
-
----
-
 ## ✨ Possible Improvements (Given More Time)
 
 ### 📦 1. Direct Media Upload via S3
